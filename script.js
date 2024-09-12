@@ -75,23 +75,20 @@ function creteElemetMissens(person){
     let divRANK = document.createElement("div")
     let pRANK = document.createElement("p")
     pRANK.textContent = person.RANK
-    divRANK.appendChild(pFullname)
+    divRANK.appendChild(pRANK)
 
     let divPOSITION = document.createElement("div")
     let pPOSITION = document.createElement("p")
-    pFullname.textContent = person.FullName
-    divFullname.appendChild(pFullname)
+    pPOSITION.textContent = person.POSITION
+    divPOSITION.appendChild(pPOSITION)
 
-    let divFullname = document.createElement("div")
-    let pFullname = document.createElement("p")
-    pFullname.textContent = person.FullName
-    divFullname.appendChild(pFullname)
+    let divPLATOON= document.createElement("div")
+    let pPLATOON= document.createElement("p")
+    pPLATOON.textContent = person.PLATOON
+    divPLATOON.appendChild(pPLATOON)
 
-    let divFullname = document.createElement("div")
-    let pFullname = document.createElement("p")
-    pFullname.textContent = person.FullName
-    divFullname.appendChild(pFullname)
-
-
-    
+    let divTime = document.createElement("div")
+    let pTime = document.createElement("p")
+    pTime.textContent = person.Time
+    divTime.appendChild(pFullname)    
 }
