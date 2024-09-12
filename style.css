@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(36, 33, 33);
+}
+
+.up-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  height: 50%;
+}
+
+.up-div p {
+  color: green;
+}
+.creat-Personnel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3px;
+  background-color: rgb(62, 52, 75);
+  width: 80%;
+  height: 80%;
+  border-top: 3px;
+  border-bottom: 3px;
+  border-color: green;
+  border-style: solid;
+}
+
+.creat-Personnel input {
+  width: 70%;
+  background-color: rgb(42, 41, 46);
+  color: white;
+}
+
+.creat-Personnel select {
+  width: 70%;
+  background-color: rgb(69, 60, 60);
+  color: rgb(111, 113, 114);
+}
+
+.creat-Personnel p {
+  background-color: rgb(1, 44, 1);
+  width: 70%;
+  text-align: center;
+  color: white;
+}
+.bottom-div {
+  margin-top: 7px;
+  width: 100%;
+}
+
+.nav-titel {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(16, 118, 33);
+  background-color: white;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.details div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 17%;
+  border: 1px;
+  border-color: aliceblue;
+  border-style: solid;
+}
+.buton-actions {
+  width: 100%;
+  gap: 5px;
+  align-items: center;
+  text-align: center;
+  border: 2px;
+}
+
+.buton-actions p {
+  background-color: green;
+  width: 100%;
+}
