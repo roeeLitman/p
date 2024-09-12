@@ -90,5 +90,31 @@ function creteElemetMissens(person){
     let divTime = document.createElement("div")
     let pTime = document.createElement("p")
     pTime.textContent = person.Time
-    divTime.appendChild(pFullname)    
+    divTime.appendChild(pTime)    
+
+    let divSTATUS = document.createElement("div")
+    let pSTATUS = document.createElement("p")
+    pSTATUS.textContent = person.STATUS
+    divSTATUS.appendChild(pSTATUS) 
+
+    let divbuton = document.createElement("div")
+    let pbuton1 = document.createElement("p")
+    pbuton1.textContent = "tst"
+    let pbuton2 = document.createElement("p")
+    pbuton2.textContent = "tst"
+    let pbuton3 = document.createElement("p")
+    pbuton3.textContent = "tst"
+
+    divbuton.appendChild(pbuton1) 
+    divbuton.appendChild(pbuton2) 
+    divbuton.appendChild(pbuton3) 
+
+    divbuton.classList.add("buton-actions")
+
+    mynDiv.appendChild(divFullname)
+    mynDiv.appendChild(divRANK)
+    mynDiv.appendChild(divPOSITION)
+    mynDiv.appendChild(divPLATOON)
+    mynDiv.appendChild(divSTATUS)
+    mynDiv.appendChild(divbuton)
 }
