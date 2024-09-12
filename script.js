@@ -7,8 +7,7 @@ btmAddPrsonal.addEventListener("click",(e)=>{
     // מנקה את טבלת המשימות
     clearMissens()
 
-
-
+    lowdMissenToHTML()
 })
 
 //פונקציה ליצירת אשיות
@@ -53,11 +52,17 @@ function clearMissens() {
 }
 
 //  מעכדכן את כל של המשמות בדף התצוגה
-function lowdMissen(){
+function lowdMissenToHTML(){
     let arrPerson = lodlocalStorage()
     for(let person of arrPerson){
+        console.log(1);
+        
         // יוצר אלמנט שיוכנס לתוך הדף בהמשך
         let missens = creteElemetMissens(person)
+        console.log(missens);
+        
+        let tabele = document.querySelector(".bottom-table")
+        tabele.appendChild(missens)
     }
 }
 
@@ -117,4 +122,6 @@ function creteElemetMissens(person){
     mynDiv.appendChild(divPLATOON)
     mynDiv.appendChild(divSTATUS)
     mynDiv.appendChild(divbuton)
+
+    return mynDiv
 }
